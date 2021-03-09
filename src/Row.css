@@ -14,20 +14,63 @@
 .row__poster{
     object-fit: contain;
     width: 100%;
-    max-height: 100px;
+    max-height: 200px;
+    /* height: 100px; */
+    /* width:200px; */
     margin-right: 10px;
     transition: transform 450ms;
 }
 .row__poster:hover{
     transform: scale(1.08);
+    cursor: pointer;
 }
 .row__posterLarge{
-    max-height: 250px;
+    max-height: 350px;
     transition: transform 450ms;
-    
 }
-
 .row__posterLarge:hover{
     transform: scale(1.09);
     opacity: 1;
+    cursor: pointer;
+}
+.Modal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-color: papayawhip;
+    margin: 20;
+  }
+  .Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: lightgray;
+    background-image: ;
+  }
+.modal_container{
+    background-color:#111; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal__poster{
+    /* object-fit: contain; */
+    /* width: 100%; */
+    max-height: 400px;
+    margin-right: 10px;
+}
+.modal_info{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+.modal_title{
+    margin: 0 auto;
+    text-align: center;
+    color: red;
 }
